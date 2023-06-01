@@ -14,13 +14,14 @@ int main(int argc, char *argv[]) {
 	if(consumo_b<consumo_a){
 		kw=consumo_a-consumo_b;
 		if(kw<=1000){
-			precio=1.2;
+			precio=1.2*kw;
+			
 			printf("tu consumo es %d  y el precio %.2f \n",kw, precio);
 		}if(kw>1000 && kw<=1850){
-			precio=1.8;
+			precio=1.8*kw;
 			printf("tu consumo es %d  y el precio %.2f \n",kw, precio);
 		}if(kw>1850){
-			precio=2.1;
+			precio=2.1*kw;
 			printf("tu consumo es %d  y el precio %.2f \n",kw, precio);
 		}
 	}else{
